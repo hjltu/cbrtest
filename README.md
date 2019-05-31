@@ -1,9 +1,9 @@
 # cbrtest
 
 Запуск:
-  chmod +x run.sh
-  ./run.sh -env
-  ./run.sh -i
+  chmod +x run.sh<br>
+  ./run.sh -env<br>
+  ./run.sh -i<br>
   ./run.sh
 
 # Тестовое задание на позицию в РЦР Екатеринбург
