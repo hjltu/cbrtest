@@ -7,7 +7,6 @@ echo "usage:
 # -i: install behave and selenium"
 
 export VENV="venv"
-export VENV="/home/hjltu/Templates/venv/behave"
 
 if [ $1 ]; then
     # install env
