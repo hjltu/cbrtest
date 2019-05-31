@@ -18,13 +18,12 @@ Send email with attached images
 usage: python3 myemail.py mail@to
 """
 
-import smtplib
+import os
 import sys
+import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
-
-import os
 
 
 def main(arg):
