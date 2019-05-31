@@ -36,4 +36,5 @@ sleep 2
 MAIL="example@mail"
 echo "*** SEND EMAIL TO $MAIL ***"
 #python3 myemail $MAIL
+rm -r img
 echo "*** THE END ***"
