@@ -2,6 +2,7 @@
 browser.py
 """
 
+import os
 import time
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
@@ -88,4 +89,7 @@ class Cbr(Google):
             return "ERR"
 
     def take_screenshot(self, name):
-        self.driver.save_screenshot('img/'+name)
+        directory = 'img/'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        self.driver.save_screenshot(directory+name)
