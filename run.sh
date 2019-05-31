@@ -7,6 +7,7 @@ echo "usage:
 # -i: install behave and selenium"
 
 export VENV="venv"
+export VENV="/home/hjltu/Templates/venv/behave"
 
 if [ $1 ]; then
     # install env
@@ -29,7 +30,7 @@ if [ -z $1 ]; then
 fi
 
 echo "*** END TEST ***"
-sleep(2)
+sleep 2
 
 # send email
 # first check the required fields in myemail.py file
