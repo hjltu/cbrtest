@@ -26,15 +26,18 @@ fi
 if [ -z $1 ]; then
     echo "*** START ***"
     $VENV/bin/behave
+
+    echo "*** END TEST ***"
+    sleep 2
+
+    # send email
+    # first check the required fields in myemail.py file
+    MAIL="example@mail"
+    echo "*** SEND EMAIL TO $MAIL ***"
+    #python3 myemail $MAIL
+
+    # rm img/
+    rm -r img
 fi
 
-echo "*** END TEST ***"
-sleep 2
-
-# send email
-# first check the required fields in myemail.py file
-MAIL="example@mail"
-echo "*** SEND EMAIL TO $MAIL ***"
-#python3 myemail $MAIL
-rm -r img
 echo "*** THE END ***"
